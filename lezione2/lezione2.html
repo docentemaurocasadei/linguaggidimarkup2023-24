@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lezione 2</title>
+    <title>Lezione2</title>
 </head>
+
 <body>
-    
+    <h1>Questo è il titolo principale della pagina</h1>
+    <h2>Il primo sottotitolo</h2>
+    <h3>il sotto sotto titolo 1</h3>
+    <p>
+        <strong>Lorem</strong>, ipsum <b>dolor</b>
+        <em>sit amet</em> consectetur <i>adipisicing</i> elit. <u>Magni</u> perspiciatis eligendi deserunt magnam illum
+        harum id odio sint distinctio corporis pariatur iste nesciunt cumque quidem, iusto itaque architecto vitae
+        eveniet.
+    </p>
+
+    <h3>il sotto sotto titolo 2</h3>
+    <blockquote>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis qui magnam, neque velit rerum voluptatum
+            natus? Cumque, earum enim! Corrupti ullam nobis placeat, eligendi ab temporibus esse laborum pariatur
+            possimus.
+        </p>
+        <cite>by Mauro</cite>
+    </blockquote>
+    <h2>Il secondo sottotitolo</h2>
+    <p>
+        <cite>citazione</cite>
+        <q>testo con il doppio apice</q>
+        <abbr title="Ente Nazionale A... Italiano P...">ENAIP</abbr>
+    </p>
+    <h2>Il terzo sottotitolo</h2>
+    un testo ad <sup>apice</sup> e uno a <sub>pedice</sub>
+    <h2>Il quarto sottotitolo</h2>
+    codice per inserire un tag
+    <code>
+        il tag h1 è un titolo principale
+    </code>
+    <code>il tag h2 è un sottotitolo</code>
+    <h2>insieme di elementi per formattare e dare uno stile:</h2>
+    <del>testo cancellato</del>
+    <ins>testo inserito</ins>
+    <mark>testo evidenziato</mark>
+    <time datetime="2023-05-31">31 maggio 2023</time>
+    <small>testo di dimensioni inferiori</small>
+    <pre>
+        <!-- commento -->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            <b>Reiciendis</b>, et quas. Hic nulla temporibus, 
+        porro debitis quia tempora saepe voluptate provident 
+        eum corrupti ipsam repellat libero explicabo dolore repellendus earum!
+    </pre>
+    <address>
+        Rossi s.r.l.
+        via della repubblica, 54
+        47921 Rimini (RN)
+    </address>
+    <p> il tag &lt;pre&gt; &copy; &amp;gt; consente di preformattare un testo</p>
+    &lt;script&gt;alert('ciao')&lt;/script&gt;
+    <div id="menù">
+        <p>Home</p>
+        <p>Chi Siamo</p>
+        <p>Contatti</p>
+    </div>
+    <div id="primacolonna">
+        <div id="banner">
+            <div>
+                immagine banner
+            </div>
+            <h2>testo banner</h2>
+        </div> <!--chiudo banner-->
+    </div> <!--chiudo primacolonna-->
+    <h2>Liste</h2>
+    <h3>Liste Ordinate (ordered list)</h3>
+    <ol style="list-style-type: lower-alpha;">
+        <li>punto 1
+            <ul>
+                <li>punto 1.1</li>
+                <li>punto 1.2</li>
+                <li>punto 1.3</li>
+            </ul>
+        </li>
+        <li>punto 2</li>
+        <li>punto 3</li>
+    </ol>
+    <h3>Liste NON Ordinate (unordered list)</h3>
+    <ul style="list-style-type: square;">
+        <li>punto ul 1</li>
+        <li>punto ul 2</li>
+        <li>punto ul 3</li>
+    </ul>
+    <h3>Liste di definizione (definition list)</h3>
+    <dl>
+        <dt>chatgpt</dt>
+        <dd>intelligenza artificiale di openai - microsoft</dd>
+        <dt>bard</dt>
+        <dd>intelligenza artificiale di google</dd>
+    </dl>
+
+    <h2>tabelle</h2>
+    <table>
+        <caption>Titolo della tabella</caption>
+        <thead>
+            <th>Tipo di Fornitore</th>
+            <th>Nome Fornitore</th>
+            <th>Servizio</th>
+            <th>Costo</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hosting</td>
+                <td>Aruba</td>
+                <td>Hosting Base Linux</td>
+                <td>29,90</td>
+            </tr>
+            <tr>
+                <td>Hosting</td>
+                <td>OVH</td>
+                <td>Server Managed</td>
+                <td>350,00</td>
+            </tr>
+            <tr>
+                <td>Hosting</td>
+                <td>Siteground</td>
+                <td>Cloud Hosting</td>
+                <td>200,00</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>Media di Costo</td>
+                    <td></td>
+                    <td></td>
+                    <td>193,30</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
 </body>
+
 </html>
