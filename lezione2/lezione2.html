@@ -102,8 +102,13 @@
     </dl>
 
     <h2>tabelle</h2>
-    <table>
+    <table style="width:500px;" border="1">
         <caption>Titolo della tabella</caption>
+        <colgroup>
+            <col span="2" style="background-color: aquamarine;">
+            <col span="1" style="background-color: transparent;">
+            <col span="1" style="background-color: lightblue;">
+        </colgroup>
         <thead>
             <th>Tipo di Fornitore</th>
             <th>Nome Fornitore</th>
@@ -112,29 +117,25 @@
         </thead>
         <tbody>
             <tr>
-                <td>Hosting</td>
+                <td rowspan="3">Hosting</td>
                 <td>Aruba</td>
                 <td>Hosting Base Linux</td>
                 <td>29,90</td>
             </tr>
             <tr>
-                <td>Hosting</td>
                 <td>OVH</td>
                 <td>Server Managed</td>
                 <td>350,00</td>
             </tr>
             <tr>
-                <td>Hosting</td>
                 <td>Siteground</td>
                 <td>Cloud Hosting</td>
                 <td>200,00</td>
             </tr>
             <tfoot>
-                <tr>
-                    <td>Media di Costo</td>
-                    <td></td>
-                    <td></td>
-                    <td>193,30</td>
+                <tr style="background-color: crimson;">
+                    <td colspan="3">Media di Costo</td>
+                    <td style="color: white;">193,30</td>
                 </tr>
             </tfoot>
         </tbody>
