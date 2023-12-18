@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 3</title>
+    <!-- <base href="/"> -->
+</head>
+<body>
+    <h1>Lezione 3</h1>
+    <h2 id="blocco">Elementi di Blocco</h2>
+        <div>contenuto del div</div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente reiciendis, deserunt recusandae esse cupiditate maiores ipsam inventore dolores incidunt quo voluptatem laudantium enim commodi nam. Odit facilis est fuga.</p>
+    <h2 id="inlinea">Elementi in linea</h2>
+    <span>contenuto 1 span</span>
+    <span>contenuto 2 span</span>
+    <h2 id="liste">Liste</h2>
+    <!-- ordinate -->
+    <ol style="list-style-type: lower-alpha;">
+        <li>punto 1</li>
+        <li>punto 2</li>
+        <li>punto 3</li>
+    </ol>
+    <!-- non ordinate -->
+    <!-- menù     -->
+    <nav>
+        <ul id="menù">
+            <li>
+                <a href="azienda.html" target="_blank" >Azienda</a>
+            </li>
+            <li>
+                <a href="la-storia/la-storia.html">La Storia</a>
+            </li>
+            <li>
+                <a href="./contatti.html">Contatti</a>
+            </li>
+            <li>
+                <a href="../lezione2/lezione2.html">Lezione 2</a>
+            </li>
+            <li>
+                <a href="/HTML5.pdf">Dispensa HTML</a>
+            </li>
+            <li>
+                <a href="https://www.alberghi.it" rel="nofollow">Vai al portale alberghi</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    il tag &lt;strong&gt; read more... &raquo; &laquo;
+    <h2>Tabella</h2>
+    <table border="1" id="tabella">
+        <caption>La mia tabella</caption>
+        <thead>
+            <th>elementi html</th>
+            <th>tipo</th>
+            <th>descrizione</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>p</td>
+                <td rowspan="2">blocco</td>
+                <td>paragrafo</td>
+            </tr>
+            <tr>
+                <td>div</td>
+                <td>pannello</td>
+            </tr>
+            <tr>
+                <td>span</td>
+                <td>in linea</td>
+                <td>elemento di testo in linea</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Totali</td>
+                    <td>3</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    &nbsp;
+    <!-- <iframe src="http://www.google.it" frameborder="0"></iframe> -->
+    <img src="images/azienda.jpg" alt="immagine dell'azienda">
+    <img src="data:image/png;base64,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" alt="">
+    <footer>
+        <a href="https://www.google.it">Autore</a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#blocco">Blocco</a>
+                </li>
+                <li>
+                    <a href="#inlinea">In Linea</a>
+                </li>
+                <li>
+                    <a href="#liste">Liste</a>
+                </li>
+                <li>
+                    <a href="#tabella">Tabelle</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
