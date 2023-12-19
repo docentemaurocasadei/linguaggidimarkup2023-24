@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 4 - Form</title>
+</head>
+<body>
+    <h1>I Form</h1>
+    <form name="login" action="http://localhost/linguaggi-di-markup-23-25/login.php" 
+        method="POST" enctype="multipart/form-data">
+        <label for="utente">Utente:</label>
+        <input type="text" name="utente" id="utente">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <button type="submit">Accedi</button>
+        <!-- <input type="submit" value="Accedi"> -->
+    </form>
+    <h2>Registrati</h2>
+    <form name="registrati" action="registrati.php" 
+    method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Dati Anagrafici</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" value="Mauro">
+            <label for="cognome">Cognome:</label>
+            <input type="text" name="cognome" id="cognome" value="Casadei">
+            <label for="codice-fiscale">Codice Fiscale:</label>
+            <input type="text" name="codice-fiscale" id="codice-fiscale" value="" size="16" maxlength="16">
+        </fieldset>
+        <fieldset>
+            <legend>Preferenze</legend>
+            <label for="motto">Il tuo Motto:</label>
+            <textarea name="motto" id="motto" cols="40" rows="10">E=mc2</textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
