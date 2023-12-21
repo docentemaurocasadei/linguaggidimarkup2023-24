@@ -6,29 +6,38 @@
     <title>Lezione 4 - Form</title>
 </head>
 <body>
-    <h1>I Form</h1>
+    <h1 id="h1">I Form</h1>
+    <h2>Ricerca</h2>
+    <input type="search" name="search" id="search">
+    <br><br>
     <form name="login" action="http://localhost/linguaggi-di-markup-23-25/login.php" 
         method="POST" enctype="multipart/form-data">
         <label for="utente">Utente:</label>
-        <input type="text" name="utente" id="utente" autofocus>
+        <input type="text" name="utente" id="utente" autofocus placeholder="telefono, email oppure nome utente" required>
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" required>
         <button type="submit">Accedi</button>
         <!-- <input type="submit" value="Accedi"> -->
     </form>
-    <h2>Registrati</h2>
+    <h2 contenteditable>Registrati</h2>
     <form name="registrati" action="http://localhost/linguaggi-di-markup-23-25/login.php" 
     method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Dati Anagrafici</legend>
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" value="Mauro" tabindex="2">
+            <input type="text" name="nome" id="nome" value="Mauro" tabindex="2" autocomplete="off" data-provenienza="emilia romagna">
             <label for="cognome">Cognome:</label>
             <input type="text" name="cognome" id="cognome" value="Casadei" tabindex="1">
             <label for="codice-fiscale">Codice Fiscale:</label>
-            <input type="text" name="codice-fiscale" id="codice-fiscale" value="" size="16" maxlength="16">
+            <input type="text" name="codice-fiscale" id="codice-fiscale" value="" size="16" maxlength="16" pattern="[A-Z]{6}[\d]{2}[A-Z]{1}[\d]{2}[A-z]{1}[0-9]{3}[A-z]{1}">
             <label for="data-nascita">Data di Nascita</label>
             <input type="date" name="data-nascita" id="data-nascita">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" size="40" multiple>
+            <label for="phone">Telefono:</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="website">Sito Web:</label>
+            <input type="url" name="website" id="website">
         </fieldset>
         <fieldset>
             <legend>Preferenze</legend>
@@ -50,6 +59,17 @@
             <input type="color" name="colore-preferito" id="colore-preferito">
             <label for="mese-preferito">Mese Preferito</label>
             <input type="month" name="mese-preferito" id="mese-preferito">
+            <label for="sport">Sport</label>
+            <br>
+            <input list="sport-list" name="sport" id="sport">
+            <datalist id="sport-list">
+                <option>Calcio</option>
+                <option>Volley</option>
+                <option>Basket</option>
+                <option>Tennis</option>
+                <option>Calcetto</option>
+                <option>Calciobalilla</option>
+            </datalist>    
         </fieldset>
         <fieldset>
             <legend>Tipo di azienda</legend>
@@ -81,9 +101,17 @@
         <fieldset>
             <legend>Documenti</legend>
             <label for="carta-identita">Carta di identità:</label>
-            <input type="file" name="carta-identita" id="carta-identita">
+            <input type="file" name="carta-identita" id="carta-identita" hidden>
             <input type="hidden" name="id-documento" value="123">
         </fieldset>
+        <fieldset>
+            <legend>Valuta il servizio</legend>
+            <label for="rating">Valutazione:</label>
+            <input type="number" name="rating" id="rating" min="4" max="10" step="2">
+            <label for="rating-clean">Pulizia</label>
+            <input type="range" name="rating-clean" id="rating-clean" min="1" max="10">
+        </fieldset>
+
         <button type="button" onclick="" disabled>Pulsante con evento Javascript</button>
         <button type="reset">Pulisci i campi</button>
         <button type="submit">Invia il form</button>
