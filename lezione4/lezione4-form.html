@@ -17,7 +17,7 @@
         <!-- <input type="submit" value="Accedi"> -->
     </form>
     <h2>Registrati</h2>
-    <form name="registrati" action="registrati.php" 
+    <form name="registrati" action="http://localhost/linguaggi-di-markup-23-25/login.php" 
     method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Dati Anagrafici</legend>
@@ -33,6 +33,20 @@
             <label for="motto">Il tuo Motto:</label>
             <textarea name="motto" id="motto" cols="40" rows="10">E=mc2</textarea>
         </fieldset>
+        <fieldset>
+            <legend>Preferenze</legend>
+            <label for="avventura">Avventura</label>
+            <input type="checkbox" name="avventura" id="avventura" value="avventura">
+            <label for="giallo">Giallo</label>
+            <input type="checkbox" name="giallo" id="giallo" value="giallo">
+            <label for="horror">Horror</label>
+            <input type="checkbox" name="horror" id="horror" value="horror">
+            <label for="bambini">Bambini</label>
+            <input type="checkbox" name="bambini" id="bambini" value="bambini">
+        </fieldset>
+        <button type="button" onclick="" disabled>Pulsante con evento Javascript</button>
+        <button type="reset">Pulisci i campi</button>
+        <button type="submit">Invia il form</button>
     </form>
 </body>
 </html>
