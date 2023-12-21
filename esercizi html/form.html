@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{margin:5px 5px;}
+    </style>
+</head>
+
+<body>
+    <h2>Accedi</h2>
+    <form action="http://localhost/enaip/contatti.php" method="POST" name="accedi">
+        <fieldset>
+            <legend>Accedi</legend>
+            <div>
+                <label for="login_email">E-Mail:</label>
+                <input type="email" name="login_email" id="login_email" />
+            </div>
+            <div>
+                <label for="login_password">Password:</label>
+                <input type="password" name="login_password" id="login_password" />
+            </div>
+            <input type="submit" value="Accedi">
+            <input type="reset" value="Pulisci">
+        </fieldset>
+    </form>
+    <h2>Registrati</h2>
+
+    <form action="http://localhost/enaip/contatti.php" method="POST" name="registrati" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Dati anagrafici</legend>
+            <div>
+                <label for="nome">Inserisci qui il tuo nome:</label>
+                <input type="text" name="nome" id="nome" required />
+            </div>
+            <div>
+                <label for="cognome">Inserisci qui il tuo cognome:</label>
+                <input type="text" name="cognome" id="cognome" required/>
+            </div>
+            <div>
+                <label for="email">Inserisci qui la tua email:</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+                <label for="telefono">Inserisci qui il tuo telefono:</label>
+                <input type="tel" name="telefono" id="telefono" />
+            </div>
+            <div>
+                <label for="sesso">Sesso:</label>
+                <input type="radio" name="sesso" id="sesso" value="maschio" />maschio
+                <input type="radio" name="sesso" id="sesso" value="femmina" />femmina
+            </div>
+            <div>
+                <label for="luogonascita">Luogo di nascita:</label>
+                <input type="text" name="luogonascita" id="luogonascita" />
+            </div>
+            <div>
+                <label for="datanascita">Data di nascita:</label>
+                <input type="date" name="datanascita" id="datanascita" />
+            </div> 
+            <div>
+                <label for="stato">Seleziona lo Stato di nascita</label>
+                <select name="stato" id="stato">
+                    <optgroup label="UE">
+                        <option value="Italia">Italia</option>
+                        <option value="Germania">Germania</option>
+                        <option value="Belgio">Belgio</option>
+                        <option value="Olanda">Olanda</option>
+                    </optgroup>
+                    <optgroup label="Extra UE">
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Libia">Libia</option>
+                    </optgroup>
+                </select>
+            </div>                                   
+        </fieldset>
+
+        <fieldset>
+            <legend>Password personale</legend>
+            <div>
+                <label for="password">Inserisci la password:</label>
+                <input type="password" name="password" id="password" />
+            </div> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Dati personali</legend>
+            <div>
+                Patente:
+                
+                <input type="checkbox" name="auto" id="auto" /><label for="auto">auto:</label>
+                <input type="checkbox" name="moto" id="moto" /><label for="moto">moto:</label>
+                <input type="checkbox" name="motorino" id="motorino" /><label for="motorino">aereo:</label>
+            </div>            
+
+            <div>
+                <label for="classe">Classe:</label>
+                <select name="classe" id="classe">
+                    <option value="xx">Seleziona la classe</option>
+                    <option value="1">Classe 1</option>
+                    <option value="2">Classe 2</option>
+                    <option value="3">Classe 3</option>
+                </select>
+
+            </div>
+            <div>
+                <label for="numero_preferito">Numero Pari preferito:</label>
+                <input type="number" name="numero_preferito" id="numero_preferito" min="0" max="100" step="2"/>
+            </div>  
+            <div>
+                <label for="numero_preferito" hidden>Numero Dispari preferito:</label>
+                <input type="number" name="numero_preferito" id="numero_preferito" min="1" max="99" step="2" hidden />
+            </div>                         
+            <label for="carta_identità">Carta di Identità:</label>
+            <input type="file" name="carta_identità" id="carta_identità">
+            <div>
+                <textarea name="commento" cols="40" rows="5">Inserisci qui i tuoi commenti</textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Valutazioni</legend>
+            <div>
+                <label for="confort">Confort:</label>
+                <input type="range" name="confort" id="confort" min="1" max="5" />
+            </div>
+            <div>
+                <label for="posizione">Posizione:</label>
+                <input type="range" name="posizione" id="posizione" min="1" max="5" />
+            </div>
+            <div>
+                <label for="prezzo">Prezzo:</label>
+                <input type="range" name="prezzo" id="prezzo" min="1" max="5" />
+            </div>
+            <div>
+                <label for="cortesia">Cortesia del personale:</label>
+                <input type="range" name="cortesia" id="cortesia" min="1" max="5" />
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+    </form>
+</body>
+
+</html>
