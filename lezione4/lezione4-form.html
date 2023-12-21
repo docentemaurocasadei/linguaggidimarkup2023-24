@@ -10,7 +10,7 @@
     <form name="login" action="http://localhost/linguaggi-di-markup-23-25/login.php" 
         method="POST" enctype="multipart/form-data">
         <label for="utente">Utente:</label>
-        <input type="text" name="utente" id="utente">
+        <input type="text" name="utente" id="utente" autofocus>
         <label for="password">Password:</label>
         <input type="password" name="password" id="password">
         <button type="submit">Accedi</button>
@@ -22,11 +22,13 @@
         <fieldset>
             <legend>Dati Anagrafici</legend>
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" value="Mauro">
+            <input type="text" name="nome" id="nome" value="Mauro" tabindex="2">
             <label for="cognome">Cognome:</label>
-            <input type="text" name="cognome" id="cognome" value="Casadei">
+            <input type="text" name="cognome" id="cognome" value="Casadei" tabindex="1">
             <label for="codice-fiscale">Codice Fiscale:</label>
             <input type="text" name="codice-fiscale" id="codice-fiscale" value="" size="16" maxlength="16">
+            <label for="data-nascita">Data di Nascita</label>
+            <input type="date" name="data-nascita" id="data-nascita">
         </fieldset>
         <fieldset>
             <legend>Preferenze</legend>
@@ -36,17 +38,58 @@
         <fieldset>
             <legend>Preferenze</legend>
             <label for="avventura">Avventura</label>
-            <input type="checkbox" name="avventura" id="avventura" value="avventura">
+            <input type="checkbox" name="avventura" id="avventura" value="on">
             <label for="giallo">Giallo</label>
-            <input type="checkbox" name="giallo" id="giallo" value="giallo">
+            <input type="checkbox" name="giallo" id="giallo" value="on">
             <label for="horror">Horror</label>
-            <input type="checkbox" name="horror" id="horror" value="horror">
+            <input type="checkbox" name="horror" id="horror" value="on">
             <label for="bambini">Bambini</label>
-            <input type="checkbox" name="bambini" id="bambini" value="bambini">
+            <input type="checkbox" name="bambini" id="bambini" value="on" disabled>
+            <h3>Aspetto</h3>
+            <label for="colore-preferito">Colore Preferito</label>
+            <input type="color" name="colore-preferito" id="colore-preferito">
+            <label for="mese-preferito">Mese Preferito</label>
+            <input type="month" name="mese-preferito" id="mese-preferito">
+        </fieldset>
+        <fieldset>
+            <legend>Tipo di azienda</legend>
+            <label for="srl">Srl</label>
+            <input type="radio" name="tipo-azienda" id="srl" value="1">
+            <label for="spa">SpA</label>
+            <input type="radio" name="tipo-azienda" id="spa" value="2">
+            <label for="snc">Snc</label>
+            <input type="radio" name="tipo-azienda" id="snc" value="3">
+        </fieldset>
+        <fieldset>
+            <legend>Auto preferita</legend>
+            <select name="auto-preferita" id="auto-preferita">
+                <option value="0" disabled selected>-</option>
+                <optgroup label="Lamborghini">
+                    <option value="1">Lamborghini 1</option>
+                    <option value="2">Lamborghini 2</option>
+                </optgroup>
+                <optgroup label="Ferrari">
+                    <option value="3">Ferrari 1</option>
+                    <option value="4">Ferrari 2</option>
+                </optgroup>
+                <optgroup label="Pagani">
+                    <option value="5">Pagani 1</option>
+                    <option value="6">Pagani 2</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Documenti</legend>
+            <label for="carta-identita">Carta di identità:</label>
+            <input type="file" name="carta-identita" id="carta-identita">
+            <input type="hidden" name="id-documento" value="123">
         </fieldset>
         <button type="button" onclick="" disabled>Pulsante con evento Javascript</button>
         <button type="reset">Pulisci i campi</button>
         <button type="submit">Invia il form</button>
     </form>
+    <script>
+        console.log('ciao');
+    </script>
 </body>
 </html>
