@@ -52,6 +52,22 @@ h4{
 a{
     color: var(--color-brand-customer);
 }
+#menu-principale a:hover{
+    background-color: aqua;
+}
+#menu-principale a:active{
+    background-color: brown;
+    color:white;
+}
+#menu-principale a:visited{
+    color: aqua;
+}
+#menu-principale a:link{
+    text-decoration: none;
+}
+span:hover{
+    font-size: 28px;
+}
 @media screen and (min-width: 768px) {
     h2{
         color: blue;
