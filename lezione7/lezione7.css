@@ -1,3 +1,7 @@
+:root{
+    --color-brand-customer: #3939de;
+    --size-font-default: 16px;
+}
 /* h1{
     background-color: rebeccapurple;
     color: white;
@@ -24,7 +28,7 @@ div#primopiano{
 /* spazio = discendenza */
 /* > = figlio diretto */
 nav#menu-principale li, div > span{
-    font-size: 20px;
+    font-size: var(--size-font-default);
 }
 /* ~ = fratelli ALT+126 */
 li~li{
@@ -34,10 +38,19 @@ li~li{
 header+span{
     background-color: chartreuse;
 }
+h1[lang="en"], nav[lang="en"]{
+    display: none;
+}
 @media screen and (min-width: 576px) {
     h2{
         color: cyan;
     }
+}
+h4{
+    color: var(--color-brand-customer);
+}
+a{
+    color: var(--color-brand-customer);
 }
 @media screen and (min-width: 768px) {
     h2{
