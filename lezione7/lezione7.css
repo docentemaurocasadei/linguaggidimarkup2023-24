@@ -1,4 +1,56 @@
-h1{
+/* h1{
     background-color: rebeccapurple;
     color: white;
+} */
+/* mobile first */
+h2{
+    color: lightblue;
+}
+h3{
+    color: green;
+}
+.text-blue{
+    color: blue;
+}
+#titolo-numero-2{
+    color: chartreuse !important;
+}
+*{
+    color: chocolate;
+}
+div#primopiano{
+    background-color: blueviolet;
+}
+/* spazio = discendenza */
+/* > = figlio diretto */
+nav#menu-principale li, div > span{
+    font-size: 20px;
+}
+/* ~ = fratelli ALT+126 */
+li~li{
+    background-color: cadetblue;
+}
+/* + = fratelli adiacenti */
+header+span{
+    background-color: chartreuse;
+}
+@media screen and (min-width: 576px) {
+    h2{
+        color: cyan;
+    }
+}
+@media screen and (min-width: 768px) {
+    h2{
+        color: blue;
+    }
+}
+@media screen and (min-width: 992px) {
+    h2{
+        color: blueviolet;
+    }
+}
+@media screen and (min-width: 1200px) {
+    h2{
+        color: grey;
+    }
 }
