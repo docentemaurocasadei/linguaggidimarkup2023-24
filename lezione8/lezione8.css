@@ -1,0 +1,6 @@
+/* ul li:nth-child(2){
+    background-color: var(--colore1);
+} */
+ul li:nth-child(odd){
+    background-color: var(--colore1);
+}
