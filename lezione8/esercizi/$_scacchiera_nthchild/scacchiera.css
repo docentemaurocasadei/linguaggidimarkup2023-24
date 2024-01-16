@@ -1,0 +1,28 @@
+:root{
+    --bg-1: #F8F8F8;
+    --bg-2: black;   
+}
+table{
+    border-spacing: 0px;
+}
+table tr{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+table td{
+    width: 20px;
+    height: 20px;
+}
+table tr:nth-child(even) td:nth-child(even){
+    background-color: var(--bg-1);
+}
+table tr:nth-child(even) td:nth-child(odd){
+    background-color: var(--bg-2);
+}
+table tr:nth-child(odd) td:nth-child(even){
+    background-color: var(--bg-2);
+}
+table tr:nth-child(odd) td:nth-child(odd){
+    background-color: var(--bg-1);
+}
