@@ -1,0 +1,25 @@
+/* desktop first */
+section{
+    background-color: #F26419;
+    color: white;
+}
+@media screen and (max-width:1200px) {
+    section{
+        background-color: #F6AE2D;
+    }
+}
+@media screen and (max-width:992px) {
+    section{
+        background-color: #2F4858;
+    }
+}
+@media screen and (max-width:768px) {
+    section{
+        background-color: #86BBD8;
+    }
+}
+@media screen and (max-width:576px) {
+    section{
+        background-color: #33658A;
+    }
+}
