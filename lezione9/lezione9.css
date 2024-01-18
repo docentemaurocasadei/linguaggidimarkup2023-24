@@ -1,0 +1,30 @@
+:root{
+    --colore1: #3C887E;
+    --colore2: #5B7B7A;
+    --colore3: #6FEDB7;
+    --colore4: #ACD8AA;
+    --colore5: #6C9A8B;
+    --colore6: #71C6FE;
+}
+body{
+    box-sizing: border-box;
+}
+header#riferimenti, #riferimenti a {
+    background-color: var(--colore5);
+    color: white;
+    padding: .5rem .2rem;
+}
+.container {
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: 1rem auto;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    section#primo-piano article{
+        display: inline-block;
+        width: 32%;
+    }
+}
