@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #st{
+            position: sticky;
+            top: 0px;
+        }
+        .button-container{
+            position: sticky;
+            top: 0px;
+        }
+        #modulo {
+    position: relative;
+    height: 100vh; /* Imposta un'altezza esplicita o in base alle tue esigenze */
+}
+
+.button-container {
+    position: sticky;
+    top: 0;
+    background-color: blueviolet;
+    padding: 1rem;
+    z-index: 1000;
+}
+    </style>
+</head>
+<body>
+    <br>
+    <form action="http://localhost/corso/salva-dati.php" method="POST" enctype="multipart/form-data" class="2colonne">
+        <div class="row">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" value="">
+            </div>
+            <div>
+                <label for="surname">Cognome:</label>
+                <input type="text" name="surname" id="surname">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <audio src="/lezione4/assets/music.mp3" controls autoplay></audio>
+        </div>
+        <div>
+            <h2>Qual'è il tuo hobby preferito?</h2>
+            <div>
+                <input type="radio" name="hobby" id="sport" value="1">
+                <label for="sport">Sport</label>
+                <input type="radio" name="hobby" id="cinema" value="2"> 
+                <label for="cinema">Cinema</label>
+                <input type="radio" name="hobby" id="lettura" value="3"> 
+                <label for="lettura">Lettura</label>
+            </div>
+
+        </div>
+        <div>
+            <h2>Qual'è il tipo di film che preferisci?</h2>
+            <div>
+                <input type="checkbox" name="fantascienza" id="fantascienza" value="1">
+                <label for="fantascienza">Fantascienza</label>
+                <input type="checkbox" name="drammatico" id="drammatico">
+                <label for="drammatico">Drammatico</label>
+                <input type="checkbox" name="romantico" id="romantico">
+                <label for="romantico">Romantico</label>
+            </div>
+        </div>
+    </form>
+
+    <section id="modulo">
+        <div class="button-container">
+            <button type="submit" class="top">Salva</button>
+        </div>
+    </section>
+    <br><br><br><br>a<br><br><br><br><br><br><br>
+    <br><br><br><br>a<br><br><br><br><br><br><br>
+    <br><br><br><br>a<br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -29,7 +29,6 @@ form{
 section#modulo{
     display: flex;
     justify-content: center;
-    position: relative;
 }
 form > div {
     display: flex;
@@ -37,14 +36,18 @@ form > div {
     flex-direction: column;
     align-items: center;
 }
-body{
-    position: relative;
-}
-.top{
+.sticky{
     position: sticky;
-    top: 0;
+    top: 0px;
+    margin: 0 auto;
+}
+.button-container{
+    height: 1000vh;
+}
+.top {
     background-color: blueviolet;
-    padding: 3rem;
+    padding: 1rem;
+    z-index: 1000; /* Aggiunto z-index per garantire che il pulsante sia sopra gli altri elementi */
 }
 @media screen and (min-width:768px) {
     .row{
