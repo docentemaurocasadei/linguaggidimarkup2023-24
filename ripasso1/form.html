@@ -6,8 +6,22 @@
     <title>Form</title>
 </head>
 <body>
-    <form action="salvaDati.php" method="POST" enctype="multipart/form-data">
-
+    <form action="http://localhost/corso/salva-dati.php" method="POST" enctype="multipart/form-data" class="2colonne">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="surname">Cognome:</label>
+            <input type="text" name="surname" id="surname">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <button type="submit">Salva</button>
+        </div>
     </form>
 </body>
 </html>
