@@ -24,14 +24,31 @@
           </div>
         </div>
       </nav>
-      <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <div class="p-5 bg-body-tertiary rounded-3">
         <div class="container-fluid py-5 text-center">
           <h1 class="display-5 fw-bold">Ripasso4</h1>
           <p class="col-md-8 offset-md-2 fs-4 text-center">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
           <button class="btn btn-primary btn-lg" type="button" id="cta">Example button</button>
         </div>
       </div>
-      <section id="news" class="container">
+      <section class="container-fluid bg-warning">
+        <form class="myform  py-2">
+            <div class="mb-3 me-3 border-top border-bottom">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 me-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check me-3">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+      </section>
+      <section id="news" class="container mt-3">
         <div class="row justify-content-evenly">
             <div class="col-12 col-sm-6 col-md-4 p-1">
                 <div class="card" >

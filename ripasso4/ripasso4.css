@@ -1,6 +1,12 @@
 ul li{
     list-style-type: none;
 }
+.myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #payoff{
     background-image: url('./sfondo.jpg');
     background-size: cover;
@@ -33,4 +39,9 @@ ul li{
     #cta{
         background-color: green;
     }
+    .myform{
+        flex-direction: row;
+        align-items: center;
+    }
+    
 }
