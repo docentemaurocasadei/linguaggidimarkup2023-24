@@ -1,8 +1,28 @@
 ul li{
     list-style-type: none;
 }
+#payoff{
+    background-image: url('./sfondo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#payoff h2{
+    position: relative;
+    z-index: 1;
+}
+.pellicola{
+    background-color: rgba(0, 0, 0, 0.704);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+}
 #socket{
-    background-color: #D6E0FD;
+    background-color: #232222;
+    color: white;
 }
 @media screen and (min-width: 576px) {
     #cta{
