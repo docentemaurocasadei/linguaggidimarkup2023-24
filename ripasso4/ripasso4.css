@@ -1,0 +1,16 @@
+ul li{
+    list-style-type: none;
+}
+#socket{
+    background-color: #D6E0FD;
+}
+@media screen and (min-width: 576px) {
+    #cta{
+        background-color: yellowgreen;
+    }
+}
+@media screen and (min-width: 768px) {
+    #cta{
+        background-color: green;
+    }
+}
